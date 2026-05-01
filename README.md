@@ -2,6 +2,9 @@
 
 A personal blog website dedicated to Programmable Logic Controller (PLC) topics and industrial automation.
 
+🚀 **Live Demo**: https://jakemaney88.dpdns.org  
+📚 **Deployment Guide**: See [DEPLOY_STEPS.md](./DEPLOY_STEPS.md)
+
 ## Features
 
 - ✅ **Markdown-based blog posts** - Easy content management with front matter support
@@ -140,6 +143,44 @@ npm run lint
 - Incremental Static Regeneration (ISR) for new posts
 - Optimized images and assets
 - Minimal CSS bundle
+
+## Deployment
+
+### Quick Start
+
+1. **Create GitHub Repository**:
+   ```bash
+   git remote add origin https://github.com/jakemaney2025-crypto/plc-blog.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+2. **Deploy to Vercel**:
+   - Visit https://vercel.com
+   - Connect your GitHub account
+   - Import the `plc-blog` repository
+   - Deploy with one click
+
+3. **Bind Custom Domain**:
+   - In Vercel project settings, go to "Domains"
+   - Add your domain: `jakemaney88.dpdns.org`
+   - Update DNS records at your domain provider
+   - Wait for DNS propagation (15 min - 48 hours)
+
+For detailed instructions, see [DEPLOY_STEPS.md](./DEPLOY_STEPS.md)
+
+### Continuous Deployment
+
+After initial setup, simply push to GitHub:
+```bash
+./push.sh "Your commit message"
+# or
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
+Vercel will automatically deploy your changes within 2-3 minutes!
 
 ## Customization
 
