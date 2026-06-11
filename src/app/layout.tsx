@@ -3,6 +3,7 @@ import '@/styles/globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import { ChatWidget } from '@/components/ChatWidget';
 
 export const metadata = {
   title: 'PLC Blog - Programmable Logic Controller Topics',
@@ -25,6 +26,7 @@ export default function RootLayout({
             </main>
             <Footer />
           </div>
+          <ChatWidget />
         </ThemeProvider>
       </body>
     </html>
